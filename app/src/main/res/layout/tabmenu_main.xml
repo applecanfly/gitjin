@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="match_parent">
+
+    <ImageButton
+
+        android:id="@+id/imgbtn_catefrag"
+        android:onClick="open"
+        android:src="@drawable/select_menu_main"
+        android:layout_marginLeft="10dp"
+        android:background="#333"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</LinearLayout>

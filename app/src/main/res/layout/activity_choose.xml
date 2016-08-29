@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_banner">
+
+    <com.example.jinping.yohuo.view.MychoseLinearlyout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="160dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/button_boy_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_boy_choose"
+            android:onClick="start"
+
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/button_girl_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="start"
+
+            android:src="@drawable/select_girl_choose"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/button_child_choose"
+            android:layout_width="match_parent"
+            android:onClick="start"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_child_choose"
+            android:background="@null" />
+
+        <ImageButton
+            android:onClick="start"
+
+            android:id="@+id/button_style_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_style_choose"
+            android:background="@null" />
+
+
+    </com.example.jinping.yohuo.view.MychoseLinearlyout>
+
+
+</RelativeLayout>

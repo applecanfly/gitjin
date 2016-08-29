@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.jinping.yohuo.view.MySlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sliding"
+    tools:context="com.example.jinping.yohuo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/entity">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RadioGroup
+            android:layout_alignParentBottom="true"
+            android:id="@+id/radiogroup_main"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <com.example.jinping.yohuo.view.RadioButtonMain
+                android:id="@+id/rabtn_home_main"
+                style="@style/radiobutton"
+                android:drawableTop="@drawable/select_rabtn_home_mian"
+                android:text="首页"
+
+
+                android:checked="false" />
+
+            <com.example.jinping.yohuo.view.RadioButtonMain
+                android:id="@+id/rabtn_category_main"
+                style="@style/radiobutton"
+                android:drawableTop="@drawable/select_rabtn_category_mian"
+                android:text="分类" />
+
+            <com.example.jinping.yohuo.view.RadioButtonMain
+                android:id="@+id/rabtn_see_main"
+                style="@style/radiobutton"
+                android:drawableTop="@drawable/select_rabtn_see_mian"
+                android:text="逛"
+
+                />
+
+            <com.example.jinping.yohuo.view.RadioButtonMain
+                android:id="@+id/rabtn_buy_main"
+                style="@style/radiobutton"
+                android:drawableTop="@drawable/select_rabtn_buy_mian"
+                android:text="购物车"
+
+                />
+
+            <com.example.jinping.yohuo.view.RadioButtonMain
+                android:id="@+id/rabtn_mine_main"
+                style="@style/radiobutton"
+                android:drawableTop="@drawable/select_rabtn_mine_mian"
+                android:text="我的" />
+
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/fram_main"
+            android:layout_above="@+id/radiogroup_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</com.example.jinping.yohuo.view.MySlidingPaneLayout>

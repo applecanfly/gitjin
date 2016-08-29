@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="#333"
+        android:id="@+id/relate_catemain"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <include
+            layout="@layout/tabmenu_main"
+            android:id="@+id/imgbtn_catefrag"
+            android:padding="10dp"></include>
+
+
+        <android.support.design.widget.TabLayout
+            android:layout_toRightOf="@+id/imgbtn_catefrag"
+            android:id="@+id/tool_catefrag"
+            android:layout_marginLeft="10dp"
+
+
+            app:tabIndicatorHeight="5dp"
+            app:tabIndicatorColor="#fff"
+            app:tabMaxWidth="60dp"
+            app:tabTextAppearance="@style/tabApprivce"
+            app:tabMode="scrollable"
+            app:tabTextColor="#fff"
+            app:tabSelectedTextColor="#fff"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.design.widget.TabLayout>
+
+
+    </RelativeLayout>
+
+    <com.example.jinping.yohuo.view.MyViewPager
+
+        android:id="@+id/pager_main"
+        android:layout_below="@+id/relate_catemain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.jinping.yohuo.view.MyViewPager>
+
+
+</RelativeLayout>

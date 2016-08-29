@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/edt_pinpai"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/item_edit_pinpai_shape"
+        android:paddingLeft="15dp"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+
+        android:drawableLeft="@drawable/share_input_search_ico"
+        android:layout_margin="10dp"
+        android:hint="搜索品牌"
+
+        />
+
+</LinearLayout>
